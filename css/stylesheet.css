@@ -86,21 +86,19 @@ a:hover {
 }
 
 #main-content > article > h1 {
-  font-family: 'Zen Old Mincho', serif;
-  font-size: 2.8rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1rem;
   font-weight: 700;
   text-align: center;
-  margin: 4rem 0 0.5rem;
+  margin: 2rem 0 2rem;
   letter-spacing: 0.1em;
-}
-
-#main-content > article > h2 {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 300;
-  color: #dc4195;
-  letter-spacing: 0.2em;
-  margin: 0 0 4rem;
+  background: #d22965;
+  color: #fff;
+  padding: 5px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ===== Section headings ===== */
