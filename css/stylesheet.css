@@ -13,7 +13,7 @@ body {
 }
 
 a {
-  color: #dc4195;
+  color: #d22965;
   text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ a:hover {
 }
 
 #global-nav nav ul li a:hover {
-  color: #dc4195;
+  color: #d22965;
   text-decoration: none;
 }
 
@@ -111,8 +111,8 @@ a:hover {
 #main-content section h2 {
   font-size: 0.8rem;
   letter-spacing: 0.3em;
-  color: #dc4195;
-  border-bottom: 1px solid #dc4195;
+  color: #d22965;
+  border-bottom: 1px solid #d22965;
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
 }
@@ -136,7 +136,7 @@ a:hover {
 
 .btn-pink {
   display: inline-block;
-  background: #dc4195;
+  background: #d22965;
   color: #fff;
   padding: 0.6rem 2rem;
   border-radius: 2px;
@@ -145,7 +145,7 @@ a:hover {
 }
 
 .btn-pink:hover {
-  background: #c0357f;
+  background: #d22965;
   text-decoration: none;
 }
 
@@ -182,7 +182,7 @@ a:hover {
 #main-content dt {
   font-size: 0.75rem;
   letter-spacing: 0.15em;
-  color: #dc4195;
+  color: #d22965;
   margin-top: 1rem;
 }
 
