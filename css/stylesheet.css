@@ -1,3 +1,196 @@
+/* ===== Base ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 4rem;
+  background-color: #fff;
+  color: #222;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+a {
+  color: #dc4195;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Global Nav ===== */
+#global-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  height: 4rem;
+  border-bottom: 1px solid #ddd;
+}
+
+#global-nav h1 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+#global-nav h1 a {
+  display: block;
+  background: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+}
+
+#global-nav img {
+  height: 3rem;
+  display: block;
+}
+
+#global-nav nav {
+  margin-left: 3rem;
+}
+
+#global-nav nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+#global-nav nav ul li a {
+  color: #222;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  transition: color 0.2s;
+}
+
+#global-nav nav ul li a:hover {
+  color: #dc4195;
+  text-decoration: none;
+}
+
+/* ===== Main Content ===== */
+#main-content {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+}
+
+#main-content > article > h1 {
+  font-family: 'Zen Old Mincho', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 4rem 0 0.5rem;
+  letter-spacing: 0.1em;
+}
+
+#main-content > article > h2 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #dc4195;
+  letter-spacing: 0.2em;
+  margin: 0 0 4rem;
+}
+
+/* ===== Section headings ===== */
+#main-content section {
+  margin-bottom: 4rem;
+}
+
+#main-content section h2 {
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  color: #dc4195;
+  border-bottom: 1px solid #dc4195;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Utility ===== */
+.large {
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: block;
+}
+
+.center {
+  display: block;
+  text-align: center;
+}
+
+.right {
+  display: block;
+  text-align: right;
+}
+
+.btn-pink {
+  display: inline-block;
+  background: #dc4195;
+  color: #fff;
+  padding: 0.6rem 2rem;
+  border-radius: 2px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+.btn-pink:hover {
+  background: #c0357f;
+  text-decoration: none;
+}
+
+/* ===== Stage section ===== */
+#stage p {
+  text-align: left;
+  width: 60%;
+  margin: 0 auto 2rem;
+}
+
+/* ===== Section image ===== */
+#main-content section img {
+  width: 100%;
+}
+
+/* ===== Table ===== */
+#main-content table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#main-content table td,
+#main-content table th {
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+}
+
+#main-content table tr:first-child td,
+#main-content table tr:first-child th {
+  border-top: 1px solid #bbb;
+}
+
+/* ===== dt / dd ===== */
+#main-content dt {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: #dc4195;
+  margin-top: 1rem;
+}
+
+#main-content dd {
+  margin: 0.2rem 0 0 0;
+}
+
+/* ===== Legacy classes (unused but kept) ===== */
 .main-image {
   height: 80vh;
   min-width: 50%;
@@ -13,10 +206,20 @@
   max-width: 600px;
 }
 
+/* ===== Mobile ===== */
 @media screen and (max-width: 600px) {
+  #global-nav nav {
+    display: none;
+  }
+
+  #main-content > article > h1 {
+    font-size: 2rem;
+  }
+
   .wrap {
     display: block;
   }
+
   .main-image {
     width: 80vw;
     height: auto;
