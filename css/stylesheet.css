@@ -104,6 +104,7 @@ a:hover {
 /* ===== Section headings ===== */
 #main-content section {
   margin-bottom: 4rem;
+  scroll-margin-top: 5rem;
 }
 
 #main-content section h2 {
