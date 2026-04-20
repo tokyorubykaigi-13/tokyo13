@@ -212,7 +212,12 @@ a:hover {
   }
 
   #main-content > article > h1 {
-    font-size: 2rem;
+    font-size: 0.85rem;
+    white-space: normal;
+  }
+
+  #stage p {
+    width: 100%;
   }
 
   .wrap {
